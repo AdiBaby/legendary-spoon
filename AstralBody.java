@@ -1,3 +1,7 @@
+/**
+* (C) ADITYA PREREPA 10-22-18
+* NO EXTERNAL API USE
+**/
 public class AstralBody {
 
     //Values Given in constructor in main
