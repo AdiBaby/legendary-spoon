@@ -21,7 +21,7 @@ public class AstralBody {
     private double AU = 1.5 * Math.pow(10,8);
     private double S_s = 6.42 * Math.pow(10,7);
 
-    public AstralBody(double distanceFromSun, double radius, double albedo, double TObsK, double TObsC, String name) {       //Find out what t Obs is later
+    public AstralBody(double distanceFromSun, double radius, double albedo, double TObsK, double TObsC, String name) {   
         this.distanceFromSun = distanceFromSun * AU;    //Huge bug came here, forgot to multiply by the unit of measurement.
         this.albedo = albedo;
         this.radius = radius;
