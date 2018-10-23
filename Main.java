@@ -1,13 +1,11 @@
-
-public class Main{
-
+public class Main {
     public static void main(String[] args) {
 
-        AstralBody mercury = new AstralBody(0.39,2440,0.1, 440,167, "Mercury");
-        AstralBody venus = new AstralBody(0.732,6052,0.75,735,462,"Venus");
-        AstralBody earth = new AstralBody(1,6378,0.3,735,462,"Earth");
-        AstralBody moon = new AstralBody(1,1738,0.12,0.00,0.00,"Moon");
-        AstralBody mars = new AstralBody(1.524,3397,0.25,215,-58, "Mars");
+        AstralBody mercury = new AstralBody(0.39, 2440, 0.1, 440, 167, "Mercury");
+        AstralBody venus = new AstralBody(0.732, 6052, 0.75, 735, 462, "Venus");
+        AstralBody earth = new AstralBody(1, 6378, 0.3, 735, 462, "Earth");
+        AstralBody moon = new AstralBody(1, 1738, 0.12, 0.00, 0.00, "Moon");
+        AstralBody mars = new AstralBody(1.524, 3397, 0.25, 215, -58, "Mars");
 
         //This makes me sad :(
         String[] params = new String[10];
@@ -83,20 +81,17 @@ public class Main{
         marsValues[8] = mars.getTObsK();
         marsValues[9] = mars.getTObsC();
 
-
-
         //f Stands for float, huge bug came from using d instead. The s represents spaces.
         String leftAlignFormat = "| %-18s | %-18f | %-18f | %-18f | %-18f | %-18f |%n";
         //Notice the agility of this...Calls string from object rather than hard-coding a string
         System.out.format("+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+%n");
         System.out.format("| Planet             | " + mercury.getName() + "            |  " + venus.getName() + "              | " + earth.getName() + "              | " + moon.getName() + "              | " + mars.getName() + "               | %n");
         System.out.format("+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+%n");
+
         for (int i = 0; i <= 9; i++) {
-            System.out.format(leftAlignFormat, params[i], mercuryValues[i],venusValues[i], earthValues[i], moonValues[i], marsValues[i]);
+            System.out.format(leftAlignFormat, params[i], mercuryValues[i], venusValues[i], earthValues[i], moonValues[i], marsValues[i]);
         }
 
         System.out.format("+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+%n");
-
-
     }
 }
