@@ -4,4 +4,4 @@ Simulate Atmospheric Emissivity.
 
 In order to get the best results, extend the screen you are excecuting the program on to full screen.
 
-
+![results](peeb2.png)
